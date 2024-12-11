@@ -63,6 +63,7 @@ async function loadMoreImages() {
 
     gallery.insertAdjacentHTML('beforeend', renderGallery(hits));
     refreshLightbox();
+    // scrollToNextBatch();
 
     if (gallery.children.length >= totalHits) {
       loadMoreButton.classList.add('hidden');
